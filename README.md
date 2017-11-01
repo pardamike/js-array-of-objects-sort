@@ -12,7 +12,7 @@ Include the file (probably globally):
 <script src="your/path/to/arrayofobjsort.js"></script>
 ~~~
 
-Now use it:
+Now use it by calling `sortByObjProp` on any array of objects:
 ~~~
 var objArray = [
 	{id: 1, name: 'zzz', otherString: 'xxx', otherInt: 5},
