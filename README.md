@@ -24,19 +24,19 @@ var objArray = [
 	{id: 7, name: 'eee', otherString: 'ccc', otherInt: 2}
 ]
 
-console.log("---- Sorted by 'id' property ----");
+/* To sort by the 'id' property: */
 objArray.sortByObjProp('id');
 console.log(objArray);
 
-console.log("---- Sorted by 'name' property ----");
+/* To sort by the 'name' property: */
 objArray.sortByObjProp('name');
 console.log(objArray);
 
-console.log("---- Sorted by 'otherString' property ----");
+/* To sort by the 'otherString' property: */
 objArray.sortByObjProp('otherString');
 console.log(objArray);
 
-console.log("---- Sorted by 'otherInt' property ----");
+/* To sort by the 'otherInt' property: */
 objArray.sortByObjProp('otherInt');
 console.log(objArray);
 ~~~
