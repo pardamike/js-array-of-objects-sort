@@ -1,4 +1,4 @@
-# js-array-of-objects-sort
+# JS Array of Objects Sort
 Extend Array.prototype to have a method for sorting an array of objects by a specified object property
 
 # Notes
