@@ -1,6 +1,11 @@
 # js-array-of-objects-sort
 Extend Array.prototype to have a function for sorting an array of objects by a specified object property
 
+# Notes
+
+* Sorts strings alphabetically (A - Z)
+* Sorts ints ascending (1, 2, 3, etc)
+
 # Usage
 Include the file (probably globally):
 ~~~
