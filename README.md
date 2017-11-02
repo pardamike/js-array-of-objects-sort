@@ -44,6 +44,6 @@ console.log(objArray);
 Also check out: [Link to CodePen](https://codepen.io/mikeparda/pen/eepvrW?editors=0012)
 
 ### TODO:
-* Make sort options asc or desc
-* Support multi-layer objects?
-* Support sorting array of arrays
+* Ability to set sort direction
+* Support multi-layer objects (sort on object's object property or object's array index)
+* Support sorting array of arrays by index
