@@ -47,4 +47,3 @@ Also check out: [Link to CodePen](https://codepen.io/mikeparda/pen/eepvrW?editor
 * Make sort options asc or desc
 * Support multi-layer objects?
 * Support sorting array of arrays
-* Refactor syntax
