@@ -1,8 +1,8 @@
 ;(function () {
 	Array.prototype.sortByObjProp = function (property, direction) {
-		if (direction && ( direction.toUpperCase() !== 'ASC' && direction.toUpperCase() !== 'DESC' ) ) {
-			console.exception("Please pass either 'asc' or 'desc' in as the sort type... if you do not pass either in, sorting will be ASC")
-		} 
+		if (direction && (typeof direction !== 'string' || ( direction.toUpperCase() !== 'ASC' && direction.toUpperCase() !== 'DESC'))) {
+			throw new TypeError("Please pass either 'asc' or 'desc' in as the sort type... if you do not pass either in, sorting will be ASC.  'direction' sent in as " + typeof direction + ": " + direction);
+		}
 		this.sort(function(a, b) {
 			var textA = a[property];
 			var textB = b[property];
