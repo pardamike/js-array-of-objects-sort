@@ -3,8 +3,8 @@ Extend Array.prototype to have a method for sorting an array of objects by a spe
 
 # Notes
 
-* Sorts strings alphabetically (A - Z)
-* Sorts ints ascending (1, 2, 3, etc)
+* By default, sorts strings alphabetically (A - Z).  Include 2nd parameter of 'desc' to sort in descending order.
+* By default, sorts ints ascending (1, 2, 3, etc).  Include 2nd parameter of 'desc' to sort in descending order.
 
 # Usage
 Include the file (probably globally):
@@ -24,12 +24,16 @@ var objArray = [
 	{id: 7, name: 'eee', otherString: 'ccc', otherInt: 2}
 ]
 
-/* To sort by the 'id' property: */
-objArray.sortByObjProp('id');
-console.log(objArray);
-
 /* To sort by the 'name' property: */
 objArray.sortByObjProp('name');
+console.log(objArray);
+
+/* To sort by the 'name' property in desc: */
+objArray.sortByObjProp('name', 'desc');
+console.log(objArray);
+
+/* To sort by the 'name' property and explicitly call 'asc' sorting: */
+objArray.sortByObjProp('name', 'asc');
 console.log(objArray);
 
 /* To sort by the 'otherString' property: */
@@ -44,6 +48,5 @@ console.log(objArray);
 Also check out: [Link to CodePen](https://codepen.io/mikeparda/pen/eepvrW?editors=0012)
 
 ### TODO:
-* Ability to set sort direction
-* Support multi-layer objects (sort on object's object property or object's array index)
+* Support multi-layer objects? (sort on object's object property or object's array index)
 * Support sorting array of arrays by index
