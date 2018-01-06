@@ -1,6 +1,8 @@
 # JS Array of Objects Sort
 Extend Array.prototype to have a method for sorting an array of objects by a specified object property
 
+[Live Example on CodePen](https://codepen.io/mikeparda/pen/eepvrW?editors=0012)
+
 # Notes
 
 * By default, sorts strings alphabetically (A - Z).  Include 2nd parameter of 'desc' to sort in descending order.
@@ -9,7 +11,7 @@ Extend Array.prototype to have a method for sorting an array of objects by a spe
 # Usage
 Include the file (probably globally):
 ~~~
-<script src="your/path/to/arrayofobjsort.js"></script>
+<script src="your/path/to/arrayofobjsort.min.js"></script>
 ~~~
 
 Now use it by calling `sortByObjProp` on any array of objects:
@@ -44,8 +46,6 @@ console.log(objArray);
 objArray.sortByObjProp('otherInt');
 console.log(objArray);
 ~~~
-
-Also check out: [Link to CodePen](https://codepen.io/mikeparda/pen/eepvrW?editors=0012)
 
 ### TODO:
 * Support multi-layer objects? (sort on object's object property or object's array index)
